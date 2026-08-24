@@ -199,8 +199,11 @@ public class Principal {
             System.out.println("Nenhuma reserva encontrada.");
             return;
         }
-        for (Reserva r : reservas) {
-            System.out.println(r);
+
+        System.out.println("\n===== RESERVAS =====");
+        for (int i = 0; i < reservas.length; i++) {
+            System.out.println(reservas[i]);
+            System.out.println("--------------------------------");
         }
     }
 
@@ -210,8 +213,11 @@ public class Principal {
             System.out.println("Nenhum cliente cadastrado.");
             return;
         }
-        for (Cliente c : clientes) {
-            System.out.println(c);
+
+        System.out.println("\n===== CLIENTES CADASTRADOS =====");
+        for (int i = 0; i < clientes.length; i++) {
+            System.out.println(clientes[i]);
+            System.out.println("--------------------------------");
         }
     }
 
@@ -221,9 +227,12 @@ public class Principal {
             System.out.println("Nenhuma cidade cadastrada.");
             return;
         }
+
+        System.out.println("\n===== CIDADES CADASTRADAS =====");
         for (int i = 0; i < cidades.length; i++) {
             System.out.println((i + 1) + " - " + cidades[i]);
         }
+        System.out.println("--------------------------------");
     }
 
     private Cidade escolherCidade(String mensagem) {
